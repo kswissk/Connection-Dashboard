@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Steel Connection Dashboard</h2>
+
+<div class="form">
+    <label>Vu (kips)</label>
+    <input id="Vu" type="number" value="40">
+
+    <label>Tu (kips)</label>
+    <input id="Tu" type="number" value="20">
+
+    <label>Bolt Diameter (in)</label>
+    <input id="d" type="number" value="0.75">
+
+    <label>Threads Included</label>
+    <select id="threads">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+
+    <button onclick="runDesign()">Run Design</button>
+</div>
+
+<hr>
+
+<h3>Table 1 (Load vs Bolt Count)</h3>
+<div id="table1"></div>
+
+<h3>Table 2 (Connection Schedule)</h3>
+<div id="table2"></div>
+
+<h3>Connection Summary</h3>
+<div id="summary"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
